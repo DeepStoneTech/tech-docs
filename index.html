@@ -9,25 +9,26 @@
     /* DeepStone RWA 平台技术说明文档样式 - 现代化设计 */
 
     :root {
-      --primary-color: #00ffff;
-      --primary-dark: #00cccc;
-      --secondary-color: #8b5cf6;
-      --accent-color: #3b82f6;
-      --success-color: #00ff88;
-      --warning-color: #ffaa00;
-      --text-color: #e2e8f0;
-      --text-secondary: #94a3b8;
-      --bg-color: #000000;
-      --bg-gradient: linear-gradient(135deg, #00ffff 0%, #8b5cf6 50%, #3b82f6 100%);
-      --bg-gradient-light: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-      --bg-card: #111111;
-      --bg-secondary: #1a1a1a;
-      --border-color: #2a2a2a;
-      --code-bg: #0a0a0a;
-      --code-text: #00ffff;
-      --shadow: 0 4px 6px -1px rgba(0, 255, 255, 0.1), 0 2px 4px -1px rgba(0, 255, 255, 0.06);
-      --shadow-lg: 0 20px 25px -5px rgba(0, 255, 255, 0.15), 0 10px 10px -5px rgba(139, 92, 246, 0.1);
-      --shadow-xl: 0 25px 50px -12px rgba(0, 255, 255, 0.2);
+      --primary-color: #1e40af;
+      --primary-dark: #1e3a8a;
+      --primary-light: #3b82f6;
+      --secondary-color: #2563eb;
+      --accent-color: #1d4ed8;
+      --success-color: #10b981;
+      --warning-color: #f59e0b;
+      --text-color: #1e293b;
+      --text-secondary: #475569;
+      --bg-color: #ffffff;
+      --bg-gradient: linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #3b82f6 100%);
+      --bg-gradient-light: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+      --bg-card: #ffffff;
+      --bg-secondary: #f1f5f9;
+      --border-color: #e2e8f0;
+      --code-bg: #f8fafc;
+      --code-text: #1e40af;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
     }
 
     * {
@@ -53,9 +54,9 @@
       right: 0;
       bottom: 0;
       background: 
-        radial-gradient(circle at 20% 50%, rgba(0, 255, 255, 0.08) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
-        radial-gradient(circle at 50% 20%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
+        radial-gradient(circle at 20% 50%, rgba(30, 64, 175, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(37, 99, 235, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 50% 20%, rgba(59, 130, 246, 0.04) 0%, transparent 50%);
       pointer-events: none;
       z-index: 0;
     }
@@ -72,6 +73,7 @@
       overflow: hidden;
       animation: fadeInUp 0.6s ease-out;
       border: 1px solid var(--border-color);
+      background: linear-gradient(to bottom, #ffffff 0%, #f8fafc 100%);
     }
 
     @keyframes fadeInUp {
@@ -93,7 +95,7 @@
       right: 0;
       height: 3px;
       background: var(--bg-gradient);
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+      box-shadow: 0 0 20px rgba(30, 64, 175, 0.2);
     }
 
     /* 标题样式 */
@@ -113,24 +115,23 @@
     }
 
     h2 {
-      color: var(--primary-color);
+      color: var(--text-color);
       font-size: 2rem;
       font-weight: 700;
       margin-top: 3rem;
       margin-bottom: 1.5rem;
       padding: 1rem 1.5rem;
-      background: linear-gradient(90deg, rgba(0, 255, 255, 0.1) 0%, transparent 100%);
+      background: linear-gradient(90deg, rgba(30, 64, 175, 0.08) 0%, transparent 100%);
       border-left: 4px solid var(--primary-color);
       border-radius: 8px;
       position: relative;
       transition: all 0.3s ease;
-      text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
     }
 
     h2:hover {
-      background: linear-gradient(90deg, rgba(0, 255, 255, 0.15) 0%, transparent 100%);
+      background: linear-gradient(90deg, rgba(30, 64, 175, 0.12) 0%, transparent 100%);
       transform: translateX(4px);
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+      box-shadow: 0 4px 12px rgba(30, 64, 175, 0.15);
     }
 
     h2::before {
@@ -142,18 +143,17 @@
       width: 4px;
       background: var(--bg-gradient);
       border-radius: 2px;
-      box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+      box-shadow: 0 0 10px rgba(30, 64, 175, 0.2);
     }
 
     h3 {
-      color: var(--secondary-color);
+      color: var(--text-color);
       font-size: 1.5rem;
       font-weight: 600;
       margin-top: 2rem;
       margin-bottom: 1rem;
       padding-left: 1rem;
       border-left: 3px solid var(--secondary-color);
-      text-shadow: 0 0 8px rgba(139, 92, 246, 0.3);
     }
 
     /* 段落样式 */
@@ -184,7 +184,6 @@
       color: var(--primary-color);
       font-weight: bold;
       font-size: 1.2em;
-      text-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
     }
 
     ul ul {
@@ -196,17 +195,15 @@
       content: '▪';
       color: var(--secondary-color);
       font-size: 1em;
-      text-shadow: 0 0 6px rgba(139, 92, 246, 0.5);
     }
 
     /* 强调文本 */
     strong {
       color: var(--primary-color);
       font-weight: 700;
-      background: linear-gradient(120deg, rgba(0, 255, 255, 0.15) 0%, rgba(0, 255, 255, 0.05) 100%);
+      background: linear-gradient(120deg, rgba(30, 64, 175, 0.1) 0%, rgba(30, 64, 175, 0.05) 100%);
       padding: 0.1rem 0.3rem;
       border-radius: 4px;
-      text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
     }
 
     /* 分隔线 */
@@ -217,19 +214,19 @@
       margin: 3rem 0;
       border-radius: 2px;
       opacity: 0.5;
-      box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+      box-shadow: 0 0 10px rgba(30, 64, 175, 0.15);
     }
 
     /* 版本信息 */
     .version-info {
-      background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+      background: linear-gradient(135deg, rgba(30, 64, 175, 0.08) 0%, rgba(37, 99, 235, 0.08) 100%);
       border-left: 4px solid;
       border-image: var(--bg-gradient) 1;
       padding: 1.5rem;
       margin-top: 3rem;
       border-radius: 12px;
       box-shadow: var(--shadow);
-      border: 1px solid rgba(0, 255, 255, 0.2);
+      border: 1px solid rgba(30, 64, 175, 0.15);
     }
 
     .version-info p {
@@ -252,28 +249,25 @@
       border-bottom: 2px solid transparent;
       padding-bottom: 2px;
       font-weight: 500;
-      text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
     }
 
     a:hover {
       color: var(--secondary-color);
       border-bottom-color: var(--secondary-color);
       transform: translateY(-1px);
-      text-shadow: 0 0 10px rgba(139, 92, 246, 0.6);
-      box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);
+      box-shadow: 0 2px 8px rgba(30, 64, 175, 0.2);
     }
 
     /* 代码块样式 */
     code {
-      background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
-      color: var(--primary-color);
+      background: linear-gradient(135deg, rgba(30, 64, 175, 0.08) 0%, rgba(37, 99, 235, 0.08) 100%);
+      color: var(--code-text);
       padding: 0.25rem 0.5rem;
       border-radius: 6px;
       font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace;
       font-size: 0.9em;
       font-weight: 500;
-      border: 1px solid rgba(0, 255, 255, 0.3);
-      text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+      border: 1px solid rgba(30, 64, 175, 0.2);
     }
 
     pre {
@@ -282,8 +276,8 @@
       padding: 1.5rem;
       border-radius: 12px;
       overflow-x: auto;
-      border: 1px solid rgba(0, 255, 255, 0.3);
-      box-shadow: var(--shadow), inset 0 0 20px rgba(0, 255, 255, 0.05);
+      border: 1px solid rgba(30, 64, 175, 0.2);
+      box-shadow: var(--shadow), inset 0 0 20px rgba(30, 64, 175, 0.03);
       margin: 1.5rem 0;
     }
 
